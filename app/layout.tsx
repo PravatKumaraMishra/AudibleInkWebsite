@@ -5,30 +5,30 @@ import './globals.css';
 export const metadata: Metadata = {
   title,
   description,
-  applicationName: 'Murmur',
+  applicationName: 'AudibleInk',
   authors: [{ name: 'Pravat Kumar Mishra', url: 'https://www.linkedin.com/in/pravat-kumar-mishra/' }],
   ...(siteUrl ? { metadataBase: new URL(siteUrl), alternates: { canonical: siteUrl } } : {}),
   openGraph: {
-    type: 'website', locale: 'en_US', siteName: 'Murmur', title, description,
-    ...(siteUrl ? { url: siteUrl, images: [{ url: `${siteUrl}/murmur.png`, alt: 'Murmur waveform app icon' }] } : {}),
+    type: 'website', locale: 'en_US', siteName: 'AudibleInk', title, description,
+    ...(siteUrl ? { url: siteUrl, images: [{ url: `${siteUrl}/audibleink.png`, alt: 'AudibleInk waveform app icon' }] } : {}),
   },
-  twitter: { card: 'summary', title, description, ...(siteUrl ? { images: [`${siteUrl}/murmur.png`] } : {}) },
+  twitter: { card: 'summary', title, description, ...(siteUrl ? { images: [`${siteUrl}/audibleink.png`] } : {}) },
   robots: { index: true, follow: true },
-  icons: { icon: '/murmur.png', apple: '/murmur.png' },
+  icons: { icon: '/audibleink.png', apple: '/audibleink.png' },
 };
 
 const structuredData = {
   '@context': 'https://schema.org',
   '@graph': [
     {
-      '@type': 'SoftwareApplication', name: 'Murmur', description,
+      '@type': 'SoftwareApplication', name: 'AudibleInk', description,
       operatingSystem: 'macOS 14 or later', applicationCategory: 'ProductivityApplication',
       processorRequirements: 'Apple Silicon', downloadUrl: repository,
-      ...(siteUrl ? { url: siteUrl, image: `${siteUrl}/murmur.png` } : {}),
+      ...(siteUrl ? { url: siteUrl, image: `${siteUrl}/audibleink.png` } : {}),
       author: { '@type': 'Person', name: 'Pravat Kumar Mishra', url: 'https://www.linkedin.com/in/pravat-kumar-mishra/' },
       featureList: ['Local neural text-to-speech', 'Markdown, text, PDF, Word, and RTF import', 'Optional Markdown code-block reading', 'Adjustable playback pace', 'Passage highlighting', 'Pronunciation dictionary'],
     },
-    ...(siteUrl ? [{ '@type': 'WebSite', name: 'Murmur', url: siteUrl, description, inLanguage: 'en' }] : []),
+    ...(siteUrl ? [{ '@type': 'WebSite', name: 'AudibleInk', url: siteUrl, description, inLanguage: 'en' }] : []),
   ],
 };
 
